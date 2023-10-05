@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPI_Manager", "EPI_Manager\EPI_Manager.csproj", "{6235B22D-8695-4C20-8E66-BA449FCA2D7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HellsysControls", "HellsysControls\HellsysControls.csproj", "{5D3A556B-119D-4FA2-B18D-28FF0DB1D818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HellsysLibrary", "HellsysLibrary\HellsysLibrary.csproj", "{181DE549-0F7E-4114-B41F-AB5946A8F63A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6235B22D-8695-4C20-8E66-BA449FCA2D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6235B22D-8695-4C20-8E66-BA449FCA2D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6235B22D-8695-4C20-8E66-BA449FCA2D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D3A556B-119D-4FA2-B18D-28FF0DB1D818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D3A556B-119D-4FA2-B18D-28FF0DB1D818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D3A556B-119D-4FA2-B18D-28FF0DB1D818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D3A556B-119D-4FA2-B18D-28FF0DB1D818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{181DE549-0F7E-4114-B41F-AB5946A8F63A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{181DE549-0F7E-4114-B41F-AB5946A8F63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{181DE549-0F7E-4114-B41F-AB5946A8F63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{181DE549-0F7E-4114-B41F-AB5946A8F63A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
