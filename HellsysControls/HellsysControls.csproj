@@ -48,6 +48,17 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\BaseControls\Tank\Gage.xaml.cs">
+      <DependentUpon>Gage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BaseControls\Tank\Tank1.xaml.cs">
+      <DependentUpon>Tank1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BaseControls\Tank\Tank2.xaml.cs">
+      <DependentUpon>Tank2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Converters\ValidatingBorderBrushConverter.cs" />
+    <Compile Include="Controls\Converters\ValidatingBorderThicknessConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -72,9 +83,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\" />
+    <Folder Include="Controls\BaseControls\CustomControls\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Controls\BaseControls\Tank\Gage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BaseControls\Tank\Tank1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BaseControls\Tank\Tank2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Styles\Colors\ControlColors.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
