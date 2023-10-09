@@ -4,19 +4,29 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EPI_Manager.Views"
+        xmlns:layout ="clr-namespace:EPI_Manager.Views.Layout"
         mc:Ignorable="d"
-        Title="MainView" Height="450" Width="800">
-    <Grid>
+        Title="MainView" Height="700" Width="1200" WindowStyle="None">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="20" ResizeBorderThickness="2"/>
+    </WindowChrome.WindowChrome>
+    <Window.Resources>
+        <Style TargetType="Grid" x:Key="GridProp">
+            <Setter Property="Background" Value="{StaticResource ColorPrimary}"/>
+        </Style>
+    </Window.Resources>
+    <Grid Style="{StaticResource GridProp}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="25"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="0.8"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="0.8"/>
+            <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <Menu Grid.Row="0" Background="Transparent">
-            <MenuItem Header="파일"/>
-            <MenuItem Header="환경설정">
-                <MenuItem x:Name="OpenSettings" Command="{Binding ShowSettingViewCommand}" Header="Settings" Foreground="Black" FontWeight="Light"/>
-            </MenuItem>
-            <MenuItem Header="기타"/>
-        </Menu>
+        <layout:EPI_TopBar Grid.Row="0"/>
+        <Grid Grid.Row="1" Background="{StaticResource ColorOrange}"/>
+        <!--<Main:MainPage Grid.Row="2" Background="Transparent" FontSize="12"/>-->
+        <Grid Grid.Row="3" Background="{StaticResource ColorOrange}"/>
+        <layout:EPI_BottomBar Grid.Row="4"/>
     </Grid>
 </Window>
