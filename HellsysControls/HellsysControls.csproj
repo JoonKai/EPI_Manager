@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -46,8 +47,24 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\BaseControls\CustomControls\EPI_NumericUpDownControl.xaml.cs">
+      <DependentUpon>EPI_NumericUpDownControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BaseControls\CustomControls\EPI_OpenFileControl.xaml.cs">
+      <DependentUpon>EPI_OpenFileControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BaseControls\CustomControls\EPI_OpenFolderControl.xaml.cs">
+      <DependentUpon>EPI_OpenFolderControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BaseControls\CustomControls\EPI_Textbox.xaml.cs">
+      <DependentUpon>EPI_Textbox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BaseControls\CustomControls\EPI_WaterMarkTextboxControl.xaml.cs">
+      <DependentUpon>EPI_WaterMarkTextboxControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\BaseControls\Tank\Gage.xaml.cs">
       <DependentUpon>Gage.xaml</DependentUpon>
     </Compile>
@@ -82,10 +99,28 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Controls\BaseControls\CustomControls\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Page Include="Controls\BaseControls\CustomControls\EPI_NumericUpDownControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BaseControls\CustomControls\EPI_OpenFileControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BaseControls\CustomControls\EPI_OpenFolderControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BaseControls\CustomControls\EPI_Textbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BaseControls\CustomControls\EPI_WaterMarkTextboxControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\BaseControls\Tank\Gage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
