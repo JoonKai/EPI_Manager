@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="EPI_Manager.Views.Layout.EPI_Parts"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EPI_Manager.Views.Layout"
+             xmlns:HellsysCon="clr-namespace:HellsysControls.Controls.BaseControls.CustomControls;assembly=HellsysControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" x:Name="root">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type HellsysCon:EPI_HeaderTextbox}">
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="TBWidth" Value="160"/>
+            <Setter Property="TBHeight" Value="20"/>
+            <Setter Property="TBColor" Value="White"/>
+            <Setter Property="THeaderWidth" Value="60"/>
+            <Setter Property="THeaderColor" Value="White"/>
+        </Style>
+        <Style TargetType="{x:Type GroupBox}">
+            <Setter Property="BorderBrush" Value="{StaticResource ColorOrange}"/>
+            <Setter Property="BorderThickness" Value="0.3"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </UserControl.Resources>
+    <!--#region 첫번째컬럼-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <!--#region 상단행-->
+        <Grid Grid.Row="0">
+            <GroupBox Header="자재조회" Foreground="White" Margin="2">
+                <DockPanel>
+                    <Grid Height="100" DockPanel.Dock="Top">
+
+                    </Grid>
+                    <DataGrid DockPanel.Dock="Top">
+
+                    </DataGrid>
+                </DockPanel>
+            </GroupBox>
+        </Grid>
+        <!--#endregion-->
+        <GridSplitter Grid.Row="1" Background="{StaticResource ColorOrange}" HorizontalAlignment="Stretch"/>
+        <!--#region 하단행-->
+        <Grid Grid.Row="2">
+            <GroupBox Grid.Column="0" Margin="2" Header="자재" Foreground="White">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <HellsysCon:EPI_HeaderTextbox THeaderText="자재번호"/>
+                        <Button Height="23" Width="100" Content="추가" Style="{StaticResource EPIButton1}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <HellsysCon:EPI_HeaderTextbox THeaderText="자재명"/>
+                        <Button Height="23" Width="100" Content="삭제" Style="{StaticResource EPIButton1}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <HellsysCon:EPI_HeaderTextbox THeaderText="설비종류"/>
+                        <Button Height="23" Width="100" Content="저장" Style="{StaticResource EPIButton1}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <HellsysCon:EPI_HeaderTextbox THeaderText="구분"/>
+                        <Button  Height="23" Width="100" Content="새로고침" Style="{StaticResource EPIButton1}"/>
+                    </StackPanel>
+                    <HellsysCon:EPI_HeaderTextbox THeaderText="자재설명"/>
+                    <HellsysCon:EPI_HeaderTextbox THeaderText="기타" TBHeight="50" TBTextWrapping="Wrap"/>
+                </StackPanel>
+            </GroupBox>
+        </Grid>
+    </Grid>
+</UserControl>

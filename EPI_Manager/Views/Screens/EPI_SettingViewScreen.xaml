@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="EPI_Manager.Views.Screens.EPI_SettingViewScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EPI_Manager.Views.Screens"
+             xmlns:layout="clr-namespace:EPI_Manager.Views.Layout"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0" Grid.Row="0">
+            <StackPanel Orientation="Horizontal">
+                <Button Command="{Binding saveCommand}" Margin="5 5 5 0" Width="60" Height="20" Content="저장" Style="{StaticResource EPIButton1}"/>
+                <Button IsCancel="True" Margin="5 5 5 0" Width="60" Height="20" Content="취소" Style="{StaticResource EPIButton1}"/>
+            </StackPanel>
+        </Grid>
+        <TabControl Grid.Row="1" Grid.Column="0" Margin="5" Background="Transparent">
+            <!--#region SettingTab 일반-->
+            <TabItem Header="일반" Margin="-3 0 0 0">
+            </TabItem>
+            <!--#endregion-->
+            <!--#region SettingTab DataBase-->
+            <TabItem Header="DataBase">
+            </TabItem>
+            <!--#endregion-->
+            <!--#region SettingTab -->
+            <TabItem Header="기타">
+            </TabItem>
+            <!--#endregion-->
+        </TabControl>
+    </Grid>
+</UserControl>

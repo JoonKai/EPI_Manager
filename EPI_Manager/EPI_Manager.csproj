@@ -87,6 +87,11 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Models\CostCategory.cs" />
+    <Compile Include="Models\Currency.cs" />
+    <Compile Include="Models\PMCategory.cs" />
+    <Compile Include="Models\Vendor.cs" />
+    <Compile Include="Models\VendorManager.cs" />
     <Compile Include="Services\IParameterReceiver.cs" />
     <Compile Include="Services\IViewService.cs" />
     <Compile Include="Services\ViewService.cs" />
@@ -98,11 +103,30 @@
     <Compile Include="Views\Layout\EPI_BottomBar.xaml.cs">
       <DependentUpon>EPI_BottomBar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Layout\EPI_Parts.xaml.cs">
+      <DependentUpon>EPI_Parts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Layout\EPI_TopBar.xaml.cs">
       <DependentUpon>EPI_TopBar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Layout\EPI_TopBar_Settings.xaml.cs">
+      <DependentUpon>EPI_TopBar_Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Layout\EPI_Vendors.xaml.cs">
+      <DependentUpon>EPI_Vendors.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maximizer.cs" />
+    <Compile Include="Views\Screens\EPI_MainViewScreen.xaml.cs">
+      <DependentUpon>EPI_MainViewScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Screens\EPI_SettingViewScreen.xaml.cs">
+      <DependentUpon>EPI_SettingViewScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Screens\EPI_VendorAndPartsScreen.xaml.cs">
+      <DependentUpon>EPI_VendorAndPartsScreen.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SettingView.xaml.cs">
       <DependentUpon>SettingView.xaml</DependentUpon>
@@ -135,9 +159,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Include="Styles\Colors\BaseColors.xaml">
       <SubType>Designer</SubType>
@@ -151,11 +173,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Layout\EPI_Parts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Layout\EPI_TopBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Layout\EPI_TopBar_Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Layout\EPI_Vendors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Screens\EPI_MainViewScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Screens\EPI_SettingViewScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Screens\EPI_VendorAndPartsScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -173,6 +219,9 @@
       <Project>{181de549-0f7e-4114-b41f-ab5946a8f63a}</Project>
       <Name>HellsysLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

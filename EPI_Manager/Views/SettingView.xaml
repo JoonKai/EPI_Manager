@@ -4,9 +4,26 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EPI_Manager.Views"
+        xmlns:layout="clr-namespace:EPI_Manager.Views.Layout"
+        xmlns:screen="clr-namespace:EPI_Manager.Views.Screens"
         mc:Ignorable="d"
-        Title="SettingView" Height="450" Width="800">
+        Title="옵션" WindowStartupLocation="CenterOwner" WindowStyle="None" Height="500" Width="700" ResizeMode="NoResize">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="20" ResizeBorderThickness="2"/>
+    </WindowChrome.WindowChrome>
+    <Window.Resources>
+        <Style TargetType="{x:Type Grid}">
+            <Setter Property="Background" Value="{StaticResource ColorDarkGray}"/>
+        </Style>
+    </Window.Resources>
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="0.5"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <layout:EPI_TopBar_Settings Grid.Row="0"/>
+        <Grid Grid.Row="1" Background="{StaticResource ColorOrange}"/>
+        <screen:EPI_SettingViewScreen Grid.Row="2"/>
     </Grid>
 </Window>

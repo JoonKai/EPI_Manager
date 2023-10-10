@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EPI_Manager.Views"
         xmlns:layout ="clr-namespace:EPI_Manager.Views.Layout"
+        xmlns:screen ="clr-namespace:EPI_Manager.Views.Screens"
         mc:Ignorable="d"
         Title="MainView" Height="700" Width="1200" WindowStyle="None">
     <WindowChrome.WindowChrome>
@@ -25,7 +26,7 @@
         </Grid.RowDefinitions>
         <layout:EPI_TopBar Grid.Row="0"/>
         <Grid Grid.Row="1" Background="{StaticResource ColorOrange}"/>
-        <!--<Main:MainPage Grid.Row="2" Background="Transparent" FontSize="12"/>-->
+        <screen:EPI_MainViewScreen Grid.Row="2" Background="Transparent" FontSize="11"/>
         <Grid Grid.Row="3" Background="{StaticResource ColorOrange}"/>
         <layout:EPI_BottomBar Grid.Row="4"/>
     </Grid>

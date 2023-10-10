@@ -50,6 +50,9 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\BaseControls\CustomControls\EPI_HeaderTextbox.xaml.cs">
+      <DependentUpon>EPI_HeaderTextbox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\BaseControls\CustomControls\EPI_NumericUpDownControl.xaml.cs">
       <DependentUpon>EPI_NumericUpDownControl.xaml</DependentUpon>
     </Compile>
@@ -101,6 +104,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Page Include="Controls\BaseControls\CustomControls\EPI_HeaderTextbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\BaseControls\CustomControls\EPI_NumericUpDownControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

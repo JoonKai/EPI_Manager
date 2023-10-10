@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:HellsysControls.Controls.BaseControls.CustomControls" 
              xmlns:converters="clr-namespace:HellsysControls.Controls.Converters"
-             mc:Ignorable="d" x:Name="root">
+             mc:Ignorable="d" d:DesignHeight="50" d:DesignWidth="200" x:Name="root">
     <UserControl.Resources>
         <converters:ValidatingBorderBrushConverter x:Key="ValidatingBorderBrushConverter"/>
         <converters:ValidatingBorderThicknessConverter x:Key="ValidatingBorderThicknessConverter"/>
