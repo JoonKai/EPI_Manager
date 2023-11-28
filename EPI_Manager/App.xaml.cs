@@ -21,6 +21,7 @@ namespace EPI_Manager
             //View
             services.AddSingleton<MainView>();
             services.AddTransient<SettingView>();
+            services.AddTransient<MainViewScreenViewModel>();
             //ViewModel
             services.AddSingleton<MainViewModel>();
             services.AddTransient<SettingViewModel>();

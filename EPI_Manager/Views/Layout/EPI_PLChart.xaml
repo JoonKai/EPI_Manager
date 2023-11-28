@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="EPI_Manager.Views.Layout.EPI_PLChart"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:chart="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             xmlns:local="clr-namespace:EPI_Manager.Views.Layout"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        
+    </UserControl.Resources>
+    <!--#region 첫번째컬럼-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <!--#region 상단행-->
+        <Grid Grid.Row="0">
+            <GroupBox Header="PL" Foreground="{StaticResource ColorWhite}" Margin="2" BorderBrush="{StaticResource ColorOrange}" BorderThickness="0.2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        
+                    </Grid>
+                    <Grid Grid.Row="1" Margin="5">
+                        <chart:CartesianChart Grid.Row="1" LegendLocation="Right">
+                            <chart:CartesianChart.ChartLegend>
+                                <chart:DefaultLegend BulletSize="5"/>
+                            </chart:CartesianChart.ChartLegend>
+                            <chart:CartesianChart.Series>
+                                <chart:ScatterSeries Title="Series A" StrokeThickness="0.5" PointGeometry="m 25 70.36218 20 -28 -20 22 -8 -6 z" Values="{Binding ValuesA}" />
+                                <chart:ScatterSeries Title="Series B" Values="{Binding ValuesB}"
+                                   PointGeometry="{x:Static chart:DefaultGeometries.Diamond}" />
+                                <chart:ScatterSeries Title="Series C" Values="{Binding ValuesC}"
+                                   PointGeometry="{x:Static chart:DefaultGeometries.Triangle}"
+                                   StrokeThickness="2" Fill="Transparent"/>
+                            </chart:CartesianChart.Series>
+                            <chart:CartesianChart.AxisY>
+                                <chart:Axis Unit="1" MinValue="0" MaxValue="600" FontSize="14" Foreground="{StaticResource ColorOrange}"></chart:Axis>
+                            </chart:CartesianChart.AxisY>
+                            <chart:CartesianChart.AxisX>
+                                <chart:Axis Unit="1" MinValue="0" MaxValue="600" FontSize="14" Foreground="{StaticResource ColorOrange}"></chart:Axis>
+                            </chart:CartesianChart.AxisX>
+                        </chart:CartesianChart>
+                    </Grid>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        
+        <!--#endregion-->
+        <GridSplitter Grid.Row="1" Background="{StaticResource ColorOrange}" HorizontalAlignment="Stretch"/>
+        <!--#region 하단행-->
+        <Grid Grid.Row="2" Margin="5">
+            <DataGrid>
+                
+            </DataGrid>
+        </Grid>
+    </Grid>
+</UserControl>

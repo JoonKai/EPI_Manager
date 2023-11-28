@@ -23,8 +23,9 @@ namespace EPI_Manager.Views.Screens
         public EPI_MainViewScreen()
         {
             InitializeComponent();
+            
         }
-
+        
         #region 삭제할 메서드
         private void InitializeDataGridView()
         {

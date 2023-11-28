@@ -19,7 +19,7 @@ namespace EPI_Manager.Views.Screens
     /// <summary>
     /// EPI_VendorAndPartsScreen.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class EPI_VendorAndPartsScreen : UserControl
+    public partial class EPI_VendorAndPartsControl : UserControl
     {
         //#region 데이터베이스멤버
         //private static string SECTION1 = "DATABASE";
@@ -36,7 +36,7 @@ namespace EPI_Manager.Views.Screens
         //SQLiteConnection sqlCon;
         //SQLiteCommand sqlCmd;
         //SQLiteDataReader sqlReader;
-        public EPI_VendorAndPartsScreen()
+        public EPI_VendorAndPartsControl()
         {
             InitializeComponent();
             InitPage();
