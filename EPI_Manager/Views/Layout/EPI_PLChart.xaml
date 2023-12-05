@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:chart="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             xmlns:chart="http://oxyplot.org/wpf"
              xmlns:local="clr-namespace:EPI_Manager.Views.Layout"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
@@ -29,25 +29,7 @@
                         
                     </Grid>
                     <Grid Grid.Row="1" Margin="5">
-                        <chart:CartesianChart Grid.Row="1" LegendLocation="Right">
-                            <chart:CartesianChart.ChartLegend>
-                                <chart:DefaultLegend BulletSize="5"/>
-                            </chart:CartesianChart.ChartLegend>
-                            <chart:CartesianChart.Series>
-                                <chart:ScatterSeries Title="Series A" StrokeThickness="0.5" PointGeometry="m 25 70.36218 20 -28 -20 22 -8 -6 z" Values="{Binding ValuesA}" />
-                                <chart:ScatterSeries Title="Series B" Values="{Binding ValuesB}"
-                                   PointGeometry="{x:Static chart:DefaultGeometries.Diamond}" />
-                                <chart:ScatterSeries Title="Series C" Values="{Binding ValuesC}"
-                                   PointGeometry="{x:Static chart:DefaultGeometries.Triangle}"
-                                   StrokeThickness="2" Fill="Transparent"/>
-                            </chart:CartesianChart.Series>
-                            <chart:CartesianChart.AxisY>
-                                <chart:Axis Unit="1" MinValue="0" MaxValue="600" FontSize="14" Foreground="{StaticResource ColorOrange}"></chart:Axis>
-                            </chart:CartesianChart.AxisY>
-                            <chart:CartesianChart.AxisX>
-                                <chart:Axis Unit="1" MinValue="0" MaxValue="600" FontSize="14" Foreground="{StaticResource ColorOrange}"></chart:Axis>
-                            </chart:CartesianChart.AxisX>
-                        </chart:CartesianChart>
+                        <chart:PlotView/>
                     </Grid>
                 </Grid>
             </GroupBox>
