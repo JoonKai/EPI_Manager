@@ -14,6 +14,7 @@ namespace EPI_Manager.Views
             InitializeComponent();
             this.SourceInitialized += ExToBp_SourceInitialized;
         }
+        //윈도우 사이즈 재구성
         private void ExToBp_SourceInitialized(object sender, EventArgs e)
         {
             System.IntPtr handle = (new WinInterop.WindowInteropHelper(this)).Handle;

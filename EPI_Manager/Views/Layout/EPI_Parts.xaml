@@ -37,7 +37,11 @@
 
                     </Grid>
                     <DataGrid DockPanel.Dock="Top">
-
+                        <!--<DataGrid.Resources>
+                            <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="Background" Value="Blue" />
+                            </Style>
+                        </DataGrid.Resources>-->
                     </DataGrid>
                 </DockPanel>
             </GroupBox>

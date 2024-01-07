@@ -9,6 +9,7 @@ namespace EPI_Manager.Models
     public class PLParameter
     {
         #region 측정시간
+        public DateTime MesureTime { get; set; }
         #endregion
     }
 }

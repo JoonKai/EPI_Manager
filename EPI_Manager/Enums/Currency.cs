@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EPI_Manager.Enums
+﻿namespace EPI_Manager.Enums
 {
+    #region Enum 통화 - Currency
     public enum Currency
     {
         KRW,
         USD,
     }
+    #endregion
 }
