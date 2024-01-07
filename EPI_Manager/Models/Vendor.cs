@@ -2,7 +2,7 @@
 {
     public class Vendor
     {
-        #region 업체코드 - 코드
+        #region 업체코드 - VendorCode
 
         /// <summary>
         /// ID
@@ -10,7 +10,7 @@
         public string VendorCode { get; set; }
 
         #endregion
-        #region 업체명 - Name
+        #region 업체명 - VendorName
 
         /// <summary>
         /// 성명
@@ -18,7 +18,7 @@
         public string VendorName { get; set; }
 
         #endregion
-        #region 담당자- 담당자
+        #region 담당자- VendorPerson
 
         /// <summary>
         /// 성명
@@ -26,7 +26,7 @@
         public string VendorPerson { get; set; }
 
         #endregion
-        #region 연락처 - 연락처
+        #region 연락처 - VendorPersonCellPhone
 
         /// <summary>
         /// 성명
@@ -34,7 +34,7 @@
         public string VendorPersonCellPhone { get; set; }
 
         #endregion
-        #region 업체취급품목 - 업체취급품목
+        #region 업체취급품목 - VendorProduct
 
         /// <summary>
         /// 성명
@@ -42,7 +42,7 @@
         public string VendorProduct { get; set; }
 
         #endregion
-        #region 기타 - 기타
+        #region 업체내용 - VendorNote
 
         /// <summary>
         /// 성명

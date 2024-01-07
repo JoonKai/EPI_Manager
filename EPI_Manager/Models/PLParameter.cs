@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace EPI_Manager.Models
 {
-    public enum Currency
+    public class PLParameter
     {
-        KRW,
-        USD,
+        #region 측정시간
+        #endregion
     }
 }
