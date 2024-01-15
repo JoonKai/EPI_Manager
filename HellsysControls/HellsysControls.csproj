@@ -102,7 +102,9 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Controls\PLControls\" />
+  </ItemGroup>
   <ItemGroup>
     <Page Include="Controls\BaseControls\CustomControls\EPI_HeaderTextbox.xaml">
       <SubType>Designer</SubType>
