@@ -18,21 +18,38 @@
             <Setter Property="DockPanel.Dock" Value="Right"/>
             <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True"/>
         </Style>
+        <Style x:Key="Admin" TargetType="{x:Type Button}">
+            <Setter Property="DockPanel.Dock" Value="Right"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
         <Style TargetType="{x:Type fontawesome:SvgAwesome}">
             <Setter Property="PrimaryColor" Value="{StaticResource ColorOrange}"/>
         </Style>
     </UserControl.Resources>
-    <DockPanel x:Name="pnlTitle" Background="{StaticResource ColorPrimary}" LastChildFill="False">
-        <fontawesome:ImageAwesome Margin="5 0 0 0" Icon="Brands_Bitcoin" PrimaryColor="White" Width="15" Height="15"/>
-        <TextBlock Text="EPI Helper" Foreground="DarkOrange" FontWeight="Bold" FontSize="13" Margin="5 0 0 0 "/>
-        <Button x:Name="btnExit" Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter},ConverterParameter=Exit}">
-            <fontawesome:SvgAwesome Icon="Solid_Xmark" PrimaryColor="Yellow"/>
+    <DockPanel x:Name="docpnlTitle" Background="{StaticResource ColorPrimary}" LastChildFill="False">
+        <!--<fontawesome:ImageAwesome Margin="5 0 0 0" Icon="Brands_Bitcoin" PrimaryColor="White" Width="15" Height="15"/>-->
+        <TextBlock Text="EPI Helper" Foreground="{StaticResource ColorOrange}" FontWeight="Bold" FontSize="13" Margin="5 0 0 0 "/>
+        <Button x:Name="btnExit"  Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter},ConverterParameter=Exit}">
+            <fontawesome:SvgAwesome Icon="Solid_Xmark" PrimaryColor="{StaticResource ColorYellow}"/>
         </Button>
         <Button x:Name="btnMaximize" Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter}}">
             <fontawesome:SvgAwesome Icon="Regular_Square" Width="13" Height="13" PrimaryColor="LightBlue"/>
         </Button>
         <Button x:Name="btnMinimize" Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter}}">
-            <fontawesome:SvgAwesome Icon="Solid_Minus" PrimaryColor="Red" Margin="-2 3 -2 -5"/>
+            <fontawesome:SvgAwesome Icon="Solid_Minus" PrimaryColor="{StaticResource ColorRed}" Margin="-2 3 -2 -5"/>
         </Button>
+        <Button Panel.ZIndex="0" Style="{StaticResource Admin}">
+            <Button.ContentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="LOGIN" Foreground="{StaticResource ColorWhite}" Margin="0 0 20 0"/>
+                </DataTemplate>
+            </Button.ContentTemplate>
+        </Button>
+        <!--<TextBlock Text="ADMIN" Style="{StaticResource Admin}" Foreground="{StaticResource ColorYellow}" FontWeight="Bold" FontSize="13" Margin="0 0 10 0" />-->
     </DockPanel>
 </UserControl>

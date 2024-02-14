@@ -49,7 +49,11 @@ namespace EPI_Manager.Views.Layout
         private void BtnExit_Click(object sender, RoutedEventArgs e)
         {
             ParentWindow.Close();
+        }
 
+        private void TextBlock_PreviewMouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            MessageBox.Show("손준석");
         }
     }
 }
