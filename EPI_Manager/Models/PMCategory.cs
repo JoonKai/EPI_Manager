@@ -8,6 +8,19 @@ namespace EPI_Manager.Models
 {
     public class PMCategory
     {
+        public List<PMCategory> PMCategories => new List<PMCategory>()
+        {
+            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
+            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
+            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
+            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
+            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
+            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
+            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
+            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
+            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
+            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
+        };
         public string Site { get; set; } = "";
         public string MOCVDNumber { get; set; } = "";
         public string ManufacturingStatus { get; set; } = "";
@@ -29,28 +42,15 @@ namespace EPI_Manager.Models
         public override string ToString()
         {
             return $"Site:{Site}, " +
-                $"MOCVDNumber:{MOCVDNumber}, " +
-                $"ManufacturingStatus:{ManufacturingStatus}, " +
-                $"MOCVDModel:{MOCVDModel}, " +
-                $"MOCVDCode:{MOCVDCode}, " +
-                $"FilterCount:{FilterCount}," +
-                $"PMCycle:{PMCycle}," +
-                $"PMDate:{PMDate}," +
-                $"FilterDate:{FilterDate}," +
-                $"ETC:{ETC}";
+                   $"MOCVDNumber:{MOCVDNumber}, " +
+                   $"ManufacturingStatus:{ManufacturingStatus}, " +
+                   $"MOCVDModel:{MOCVDModel}, " +
+                   $"MOCVDCode:{MOCVDCode}, " +
+                   $"FilterCount:{FilterCount}," +
+                   $"PMCycle:{PMCycle}," +
+                   $"PMDate:{PMDate}," +
+                   $"FilterDate:{FilterDate}," +
+                   $"ETC:{ETC}";
         }
-        public static List<PMCategory> PMCategories => new List<PMCategory>()
-        {
-            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
-            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
-            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
-            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
-            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
-            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
-            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
-            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
-            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
-            new PMCategory {Site="B/1F", MOCVDNumber="123",ManufacturingStatus="양산", MOCVDModel="K465I", MOCVDCode="B1GMO128",ChamberGage=30, FilterGage=10, DailyRunCount=5, RemainingFilterCount=40, ChamberCount=123,FilterCount= 112, PMCycle=300, FilterCycle=125, PMDate=DateTime.Now, FilterDate=DateTime.Now, ETC="손준석"},
-        };
     }
 }

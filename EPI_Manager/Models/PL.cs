@@ -1,15 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
 
 namespace EPI_Manager.Models
 {
-    public class PLParameter
+    public class PL
     {
+        #region /////생성자
+        public PL(DataRow pl)
+        {
+            MeasureTime = pl["MeasureTime"].ToString();
+            MOCVDID = pl["MOCVDID"].ToString();
+            PLID = pl["PLID"].ToString();
+            PLRECIPE = pl["PLRECIPE"].ToString();
+            WAFERNO = Convert.ToInt32(pl["WAFERNO"]);
+            WAFERID = pl["WAFERID"].ToString();
+            MESID = pl["MESID"].ToString();
+            EPIID = pl["EPIID"].ToString();
+
+            PWAVR = Math.Round(Convert.ToDouble(pl["PWAVR"]), 2);
+            PWSTD = Math.Round(Convert.ToDouble(pl["PWSTD"]), 2);
+            IIAVR = Math.Round(Convert.ToDouble(pl["IIAVR"]), 2);
+            PDAVR = Math.Round(Convert.ToDouble(pl["PDAVR"]), 2);
+            RFAVR = Math.Round(Convert.ToDouble(pl["RFAVR"]), 2);
+            THAVR = Math.Round(Convert.ToDouble(pl["THAVR"]), 2);
+            IMGPATH = pl["IMGPATH"].ToString();
+        }
+        #endregion
+
         #region 측정시간-MeasureTime
-        public DateTime MeasureTime { get; set; }
+        public string MeasureTime { get; set; }
         #endregion
         #region MOCVD 아이디 - MOCVDID
         public string MOCVDID { get; set; }
