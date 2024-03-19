@@ -89,7 +89,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Commands\RelayCommand.cs" />
-    <Compile Include="Enums\Currency.cs" />
+    <Compile Include="Enums\eCurrency.cs" />
+    <Compile Include="Enums\eCost.cs" />
     <Compile Include="Models\CostCategory.cs" />
     <Compile Include="Models\PL.cs" />
     <Compile Include="Models\PMCategory.cs" />
