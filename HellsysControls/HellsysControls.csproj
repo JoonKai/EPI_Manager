@@ -103,6 +103,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Controls\BaseControls\EPIDataGrid\" />
     <Folder Include="Controls\PLControls\" />
   </ItemGroup>
   <ItemGroup>
