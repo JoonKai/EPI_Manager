@@ -36,21 +36,21 @@
             <TabItem Header="측정설비">
                 <local:EPI_MeasuremetControl/>
             </TabItem>
-            <TabItem Header="BPM">
+            <TabItem Header="Test">
             </TabItem>
-            <TabItem Header="PMScheduler">
+            <TabItem Header="Test">
             </TabItem>
-            <TabItem Header="업체등록 및 조회">
+            <TabItem Header="Test">
                 <local:EPI_VendorAndPartsControl/>
             </TabItem>
-            <TabItem Header="구매내역">
+            <TabItem Header="Test">
 
             </TabItem>
-            <TabItem Header="바로가기">
+            <TabItem Header="Test">
             </TabItem>
-            <TabItem Header="매크로">
+            <TabItem Header="Test">
             </TabItem>
-            <TabItem Header="기타">
+            <TabItem Header="Test">
             </TabItem>
         </TabControl>
     </Grid>

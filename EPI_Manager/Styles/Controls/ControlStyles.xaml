@@ -17,7 +17,7 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsSelected" Value="True">
                             <Setter TargetName="Part_Border" Property="BorderBrush" Value="DarkOrange"/>
-                            <Setter TargetName="Part_Border" Property="BorderThickness" Value="1.5"/>
+                            <Setter TargetName="Part_Border" Property="BorderThickness" Value="2"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

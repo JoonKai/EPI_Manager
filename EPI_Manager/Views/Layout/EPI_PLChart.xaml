@@ -19,26 +19,24 @@
         </Grid.RowDefinitions>
         <!--#region 상단행-->
         <Grid Grid.Row="0">
-            <GroupBox Header="PL" Foreground="{StaticResource ColorWhite}" Margin="2" BorderBrush="{StaticResource ColorOrange}" BorderThickness="0.2">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="100"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Grid Grid.Row="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
                         
-                    </Grid>
-                    <Grid Grid.Row="1" Margin="5">
-                        
-                    </Grid>
                 </Grid>
-            </GroupBox>
+                <Grid Grid.Row="1" Margin="5">
+                        
+                </Grid>
+            </Grid>
         </Grid>
         
         <!--#endregion-->
         <GridSplitter Grid.Row="1" Background="{StaticResource ColorOrange}" HorizontalAlignment="Stretch"/>
         <!--#region 하단행-->
-        <Grid Grid.Row="2" Margin="5">
+        <Grid Grid.Row="2" Margin="1">
             <DataGrid>
                 
             </DataGrid>
